@@ -1,0 +1,29 @@
+<ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+            <img class="rounded-img" [src]="images[0]" width="900" height="600" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+            <h3 style="font-weight: bold; color: black" >Fedezze fel a vérnyomásmérés modernizált változatait!</h3>
+            <h4 style="color: black">Használja az interneten az applikációt bárhol, bármikor.</h4>
+        </div>
+    </ng-template>
+    <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+            <img class="rounded-img" [src]="images[1]" width="900" height="600" alt="Random second slide">
+        </div>
+        <div class="carousel-caption">
+            <h3 style="font-weight: bold; color: black">Tudjon meg mindent, amit kell az egészségesebb életmódért.</h3>
+            <h4 style="color: black">Tanácsokkal szolgálunk, melyek megkönnyítik az életét.</h4>
+        </div>
+    </ng-template>
+    <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+            <img class="rounded-img" [src]="images[2]" width="900" height="600" alt="Random third slide">
+        </div>
+        <div class="carousel-caption">
+            <h3 style="font-weight: bold; color: black">Regisztráljon és kezdjen egy új és egészségesebb életet!</h3>
+            <h4 style="color: black"> Opciók, lehetőségek melyek a saját igényeihez igazodnak.</h4>
+        </div>
+    </ng-template>
+</ngb-carousel>

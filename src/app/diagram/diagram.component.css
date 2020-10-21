@@ -1,0 +1,157 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 40px auto;
+    text-align:center;
+}
+
+.stage3 {
+    background: #da1c5c;
+    height: 500px;
+    width: 500px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 0;
+    top: 0;
+    text-align: left;
+    box-shadow: 3px -3px 8px #131313;
+
+}
+
+.stage2 {
+    width: 91.66666666666%;
+    height: 90%;
+    background: #ed5a6a;
+    border-radius: 5px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    border-top: white 2px solid;
+    border-right: white 2px solid;
+    box-shadow: 3px -3px 8px #131313;
+}
+
+.stage1 {
+    width: 90.9090909090%;
+    height: 88.8888888888889%;
+    background: #ef7a80;
+    border-radius: 5px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    border-top: white 2px solid;
+    border-right: white 2px solid;
+    box-shadow: 3px -3px 8px #131313;
+
+}
+
+.highnormal{
+    width: 90%;
+    height: 87.5%;
+    background: #fda63d;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: white 2px solid;
+    border-right: white 2px solid;
+    box-shadow: 3px -3px 8px #131313;
+
+}
+
+.normal {
+    width: 94.44444444%;
+    height: 92.85714285714286%;
+    background: #70c061;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: white 2px solid;
+    border-right: white 2px solid;
+    box-shadow: 3px -3px 8px #131313;
+
+}
+
+.ideal{
+    width: 94.11764705882353%;
+    height: 92.30769230769231%;
+    background: #68c02a;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: white 2px solid;
+    border-right: white 2px solid;
+    box-shadow: 3px -3px 8px #131313;
+
+}
+
+.low{
+    width: 75%;
+    height: 87.5%;
+    background: #3551f8;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: white 2px solid;
+    border-right: white 2px solid;
+    box-shadow: 3px -3px 8px #131313;
+
+}
+
+
+
+
+.valuebuttons {
+    width: 100%;
+    min-height: 15%;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 40px;
+
+}
+
+.h1{
+    margin: 5px 0 0 10px;
+}
+
+.firstvalue, .secondvalue, .pulse, .select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.calculate {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+
+.diagramtext{
+    color: white;
+    font-family: serif, "Georgia" ;
+    padding: 0 5px;
+
+}
+
+ #pointer{
+    width: 30px;
+    height: 30px;
+    content: url(https://img.icons8.com/bubbles/50/000000/blood-drawing.png);
+    object-fit: cover;
+    position: absolute;
+    z-index: 10;
+     margin-bottom: -10px;
+     margin-left: -10px;
+}

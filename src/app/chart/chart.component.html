@@ -1,0 +1,31 @@
+<div class="header ">
+    <h1 class="title">Kiértékelő oldal</h1>
+</div>
+<div class="content">
+    <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-1">
+        <ngb-panel title="Időjárás jelentés a mai napra">
+            <ng-template ngbPanelContent>
+                <p>Páratartalom: {{myData.weatherData.humidity}}%.</p>
+                <p>Hőmérséklet: {{myData.weatherData.temperature}} C°.</p>
+                <p>Légnyomás: {{myData.weatherData.airPressure}} hPa.</p>
+            </ng-template>
+        </ngb-panel>
+        <ngb-panel title="Orvosmeterológiai jelentés a mai napra">
+            <ng-template ngbPanelContent>
+                <p>{{myData.medicalMeteorology.text}}</p>
+            </ng-template>
+        </ngb-panel>
+        <ngb-panel title="Kor alapján kalkulált ideális vérnyomás az Ön számára">
+            <ng-template ngbPanelContent>
+                <p>Minimális vérnyomás érték: {{myData.optimalBloodPressureValue.minValue}}</p>
+                <p>Megfelelő vérnyomás érték: {{myData.optimalBloodPressureValue.properValue}}</p>
+                <p>Maximális vérnyomás érték: {{myData.optimalBloodPressureValue.maxValue}}</p>
+            </ng-template>
+        </ngb-panel>
+        <ngb-panel title="Vérnyomás kategória az aktuális mérés alapján">
+            <ng-template ngbPanelContent>
+                <p>{{myData.evaluateMeasurement.name}}</p>
+            </ng-template>
+        </ngb-panel>
+    </ngb-accordion>
+</div>

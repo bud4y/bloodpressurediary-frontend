@@ -1,0 +1,14 @@
+<span>{{displayedTitle}}</span>
+<p>
+    <button type="button" class="btn btn-danger" (click)="isCollapsed = !isCollapsed"
+            [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+        Bővebben
+    </button>
+</p>
+<div id="tenyek1" [ngbCollapse]="isCollapsed">
+    <div class="card">
+        <div class="card-body">
+            {{displayedText}}
+        </div>
+    </div>
+</div>

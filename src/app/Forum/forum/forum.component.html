@@ -1,0 +1,47 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header card-header-danger">
+                <h3 class="card-title">Tudnivalók</h3>
+                <p class="card-category">Információk, önnek!
+                    Tudjon meg minnél többet az egészségesebb életmódért.
+                </p>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="card-title">Tények!</h4>
+                        <div *ngFor="let ce of collapseElements | slice:0:3"  class="alert alert-primary">
+
+                            <app-collapse-basic [displayedText]="ce.text" [displayedTitle]="ce.title"></app-collapse-basic>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="card-title">Tanácsok!</h4>
+                        <div *ngFor="let ce of collapseElements | slice:3:6"  class="alert alert-success">
+                            <app-collapse-basic [displayedText]="ce.text" [displayedTitle]="ce.title"></app-collapse-basic>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="places-buttons">
+                    <div class="row">
+                        <div class="col-md-6 ml-auto mr-auto text-center">
+                                <p class="category">Ha súlyós testi tüneteket észlel magán, akkor hívja a következő számot:</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 col-md-10 ml-auto mr-auto">
+                            <div class="row" id="mento1">
+                                <div class="alert alert-warning" id="mento2">
+                                    <h1>112</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

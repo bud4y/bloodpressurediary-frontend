@@ -1,0 +1,52 @@
+<div >
+<h2 class="text-center col-md-12 p-4 mt-lg-4">Mérési adat megadása</h2>
+</div>
+<div class="valuebuttons">
+    <form [formGroup]="form" (submit)="submitForm()">
+        <input class="firstvalue" placeholder="Szisztolés érték" type="text" formControlName="systolic"><br>
+        <input class="secondvalue" placeholder="Diasztolés érték" type="text" formControlName="diastolic"><br>
+        <input class="pulse" placeholder="Pulzus" type="text" formControlName="pulse"><br>
+        <select class="select" formControlName="conditionId">
+            <option value="0" disabled selected>Napszak kiválasztása</option>
+            <option value="1">Reggel, ébredés után</option>
+            <option value="2">Este, elalvás előtt</option>
+            <option value="3">Sportolás után</option>
+            <option value="4">Napközben, nyugalmi állapotban</option>
+        </select>
+        <br>
+        <button type="submit" (click)="calculate();" mat-raised-button color="primary" class="calculate">Számolj!</button>
+    </form>
+</div>
+<div class="container" style="">
+    <div class="stage3" id="stage3" style="display: none"><span class="diagramtext">Hipertónia 3</span>
+        <div id="pointer" [ngStyle]="{ bottom: pointerY+'px', left: pointerX+'px' }" style="display: none"></div>
+        <div class="stage2"><span class="diagramtext">Hipertónia 2</span>
+            <div class="stage1"><span class="diagramtext">Hipertónia 1</span>
+                <div class="highnormal"><span class="diagramtext">Emelkedett</span>
+                    <div class="normal"><span class="diagramtext">Normális</span>
+                        <div class="ideal"><span class="diagramtext">Ideális</span>
+                            <div class="low"><span class="diagramtext">Alacsony</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" style="">
+    <div class="stage3" id="stage3" style="display: none"><span class="diagramtext">Hipertónia 3</span>
+        <div id="pointer" [ngStyle]="{ bottom: pointerY+'px', left: pointerX+'px' }" style="display: none"></div>
+        <div class="stage2"><span class="diagramtext">Hipertónia 2</span>
+            <div class="stage1"><span class="diagramtext">Hipertónia 1</span>
+                <div class="highnormal"><span class="diagramtext">Emelkedett</span>
+                    <div class="normal"><span class="diagramtext">Normális</span>
+                        <div class="ideal"><span class="diagramtext">Ideális</span>
+                            <div class="low"><span class="diagramtext">Alacsony</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
